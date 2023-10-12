@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.source-container {
+  width: 30%;
+}
+
+.target-container {
+  width: 100%;
+  background-color: #fd5;
+}
+.target-container-height {
+  width: 60%;
+  background-color: bisque;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  background-color: lightblue;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.box.dragging {
+  opacity: 0.4;
+}
+
+.target {
+  min-height: 200px;
+  border: 2px dashed gray;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.target .box {
+  margin: 0.5rem;
+}
